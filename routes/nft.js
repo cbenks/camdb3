@@ -8,19 +8,19 @@ Router.post(
   '/',
   middleware.stripToken,
   middleware.verifyToken,
-  controller.createComment
+  controller.createNft
 )
 Router.put(
   '/:nftId',
   middleware.stripToken,
   middleware.verifyToken,
-  controller.updateComment
+  controller.updateNft
 )
 Router.delete(
   '/:nftId',
   middleware.stripToken,
   middleware.verifyToken,
-  controller.deleteComment
+  controller.deleteNft
 )
 
 module.exports = Router

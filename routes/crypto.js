@@ -8,19 +8,19 @@ Router.post(
   '/',
   middleware.stripToken,
   middleware.verifyToken,
-  controller.createComment
+  controller.createCrypto
 )
 Router.put(
   '/:cryptoId',
   middleware.stripToken,
   middleware.verifyToken,
-  controller.updateComment
+  controller.updateCrypto
 )
 Router.delete(
   '/:cryptoId',
   middleware.stripToken,
   middleware.verifyToken,
-  controller.deleteComment
+  controller.deleteCrypto
 )
 
 module.exports = Router
